@@ -143,7 +143,7 @@
   const openai = new OpenAIApi(configuration);
   const response = await openai.createCompletion({
     model: "text-davinci-003",
-    prompt: `Rewite this old html content "${oldContent}" in a structure similar to this new html content "${newContent}"`,
+    prompt: `Rewrite this old html content "${oldContent}" in a structure similar to this new html content "${newContent}"`,
     temperature: 0,
     max_tokens: 1000,
   });
